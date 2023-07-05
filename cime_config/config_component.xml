@@ -27,7 +27,7 @@
     <type>char</type>
     <default_value>unset</default_value>
     <values>
-      <value grid="_w%ww3a">$DIN_LOC_ROOT/wav/ww3/ww3a.mod_def.ww3.wwver7.14.230530</value>
+      <value grid="_w%ww3a">$DIN_LOC_ROOT/wav/ww3/ww3a.mod_def.ww3.wwver7.14.230705</value>
       <value grid="_w%gx1v7">$DIN_LOC_ROOT/wav/ww3/gx1v7.mod_def.ww3.wwver7.14.230705</value>
       <value grid="_w%wtx0.66v1">$DIN_LOC_ROOT/wav/ww3/wt061.mod_def.ww3.wwver7.14.230705</value>
     </values>
