@@ -2,7 +2,7 @@
 <testlist version="2.0">
   <test name="SMS_D" grid="TL319_t061" compset="GMOM_JRA_WD">
     <machines>
-      <machine name="cheyenne" compiler="intel" category="aux_ww3dev"/>
+      <machine name="cheyenne" compiler="gnu" category="aux_ww3dev"/>
     </machines>
     <options>
       <option name="wallclock">01:00:00</option>
