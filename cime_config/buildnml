@@ -114,12 +114,12 @@ def buildnml(case, caseroot, compname):
     # Construct the namelist generator
     #----------------------------------------------------
     # determine directory for user modified namelist_definitions.xml and namelist_defaults.xml
-    user_xml_dir = os.path.join(caseroot, "SourceMods", "src.ww3dev")
+    user_xml_dir = os.path.join(caseroot, "SourceMods", "src.ww3")
     expect(os.path.isdir(user_xml_dir),
            "user_xml_dir %s does not exist " %user_xml_dir)
 
     # user definition *replaces* existing definition.
-    namelist_xml_dir = os.path.join(srcroot, "components", "ww3dev", "cime_config")
+    namelist_xml_dir = os.path.join(srcroot, "components", "ww3", "cime_config")
     definition_file = [os.path.join(namelist_xml_dir, "namelist_definition_ww3.xml")]
     user_definition = os.path.join(user_xml_dir, "namelist_definition_ww3.xml")
     if os.path.isfile(user_definition):
@@ -160,7 +160,7 @@ def buildnml(case, caseroot, compname):
             inst_string_label = "\"\""
 
         # create namelist_infile using user_nl_file as input
-        user_nl_file = os.path.join(caseroot, "user_nl_ww3dev" + inst_string)
+        user_nl_file = os.path.join(caseroot, "user_nl_ww3" + inst_string)
         expect(os.path.isfile(user_nl_file),
                "Missing required user_nl_file %s " %(user_nl_file))
         infile = os.path.join(confdir, "namelist_infile")
